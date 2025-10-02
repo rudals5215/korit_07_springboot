@@ -1,0 +1,5 @@
+package com.example.todolist.dto;
+
+public class TodoUpdateDto {
+    private String content;
+}
