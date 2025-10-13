@@ -48,9 +48,10 @@ public class OwnerController {
             return ResponseEntity.notFound().build();
         }
     }
+
     // 5. Owner 객체 수정
     @PutMapping("/owners/{id}")
-    public ResponseEntity<Owner> updateOwner(@PathVariable Long id,@RequestBody Owner ownerDetails) {
+    public ResponseEntity<Owner> updateOwner(@PathVariable Long id, @RequestBody Owner ownerDetails) {
         return ownerService.updateOwner(id, ownerDetails)
                 .map(updateOwner -> ResponseEntity.ok().body(updateOwner))
                 .orElse(ResponseEntity.notFound().build());

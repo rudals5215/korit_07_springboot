@@ -38,9 +38,9 @@ public class OwnerService {
     public Optional<Owner> updateOwner(Long id, Owner ownerDetails) {
         return ownerRepository.findById(id)
                 .map(owner -> {
-                   owner.setFirstName(ownerDetails.getFirstName());
-                   owner.setLastName(ownerDetails.getLastName());
-                   return owner;
+                owner.setFirstName(ownerDetails.getFirstName());
+                owner.setLastName(ownerDetails.getLastName());
+                return owner;
                 });
     }
 }
