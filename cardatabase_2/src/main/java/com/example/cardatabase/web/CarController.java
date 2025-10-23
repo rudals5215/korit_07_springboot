@@ -1,5 +1,5 @@
 //package com.example.cardatabase.web;
-//
+
 //import com.example.cardatabase.domain.Car;
 //import com.example.cardatabase.domain.CarRepository;
 //import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +14,7 @@
 //    }
 //
 //    @GetMapping("/cars")
-//    public Iterable<Car> getCars(){
+//    public Iterable<Car> getCars() {
 //        return carRepository.findAll();
 //    }
 //}

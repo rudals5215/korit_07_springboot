@@ -2,13 +2,11 @@ package com.example.cardatabase.domain;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@Entity
-@Data
 @NoArgsConstructor
+@Data
+@Entity
 public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

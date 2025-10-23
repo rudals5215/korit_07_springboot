@@ -24,7 +24,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         Optional<AppUser> user = userRepository.findByUsername(username);
 
         UserBuilder builder = null;
-        if (user.isPresent()) {     // 이하의 실행문이 실행된다면 user에 AppUser 객체가 있다는 의미
+        if (user.isPresent()) { // 이하의 실행문이 실행된다면 user에 AppUser 객체가 있다는 의미
             AppUser currentUser = user.get();
             builder = User.withUsername(username);
             builder.password(currentUser.getPassword());

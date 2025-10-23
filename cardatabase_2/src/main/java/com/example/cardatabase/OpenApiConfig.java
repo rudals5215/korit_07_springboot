@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Configuration;
 public class OpenApiConfig {
 
     @Bean
-    public OpenAPI carDatabaseOpenApi(){
-        return new OpenAPI()                // 빌더 패턴
+    public OpenAPI carDatabaseOpenApi() {
+        return new OpenAPI()
                 .info(new Info()
                         .title("Car REST API")
                         .description("My car Stock")
